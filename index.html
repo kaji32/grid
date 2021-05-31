@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>header</header>
+    <nav>left</nav>
+    <main>center</main>
+    <aside>right</aside>
+    <footer>footer</footer>
+</body>
+</html>
+
+<!-- 
+    1.display:grid; -> body
+    2.grid-template:"
+    "header header header"
+    "left   center right"
+    "footer footer footer"
+    ";
+    3.grid-area: header;->header
+      grid-area:center;->main
+      grid-area:left;->nav
+      grid-area: right;->aside
+      grid-area:footer;->footer
+    4.set width and height in the grid-template
+       "header header header" 150px
+       "left   center right" 1fr
+       "footer footer footer"300px
+       150px   1fr   200px
+       1fr = devide the rest space with the fr.
+---------------------------------------------------------
+    by this point for responsive design
+    5.change the template to order each elemensts in column
+    grid-template:
+        "header"
+        "center"
+        "left"
+        "right"
+        "footer"
+    6.use the gap property to make gap among each elements
+    7.as other way use "....." and set some parameter of width and height to make gap
+    "header header header header header" 150px
+    "...... ...... ...... ...... ......" 10px
+    "left   ...... center ...... right" 1fr
+    "...... ...... ...... ...... ......"10px
+    "footer footer footer footer footer"300px
+
+    conclution:1.it can be easy when to make responsive design.
+               2.it is able to eliminate unnecessary div
+               3.the construction of css can set more simple 
+               4.you can make margin visibly
+-->
